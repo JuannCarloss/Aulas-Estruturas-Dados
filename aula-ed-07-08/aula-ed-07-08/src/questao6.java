@@ -4,8 +4,8 @@ import java.util.Scanner;
 public class questao6 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        ArrayList<Integer> A = new ArrayList<Integer>();
-        ArrayList<Integer> B = new ArrayList<Integer>();
+        ArrayList<Integer> A = new ArrayList<>();
+        ArrayList<Integer> B = new ArrayList<>();
         int num;
 
         for (int i = 0; i < 5; i++){
@@ -14,8 +14,8 @@ public class questao6 {
             A.add(i, num);
         }
 
-        for (int i = 5; i >= 0; i--){
-            B.add(i, A.get(i));
+        for (int i = A.size() - 1; i >= 0; i--){
+            B.add(A.get(i));
         }
 
         System.out.println(A);
