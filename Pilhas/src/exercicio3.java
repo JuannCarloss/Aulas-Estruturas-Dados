@@ -22,13 +22,10 @@ public class exercicio3 {
 
 
 
-        for (int i=0; i<3; i++){
-            for (int j=0; j<3; j++){
-                if (p1.get(i).equals(p2.get(j))){
-                    System.out.println("pilha exatamente igual");
-                }
-                break;
-            }
+
+        while(Objects.equals(p1, p2)){
+            System.out.println("pilha exatamente igual");
+            break;
         }
 
 
